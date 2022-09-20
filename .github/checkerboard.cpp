@@ -8,18 +8,30 @@ Assignment: Lab 4 Task B
 
 int checkerboard(int width, int height){
     for (int row = 0; row < height; row++) {
-        for (int col = 0; col < width; col++) {
-            if (width > height){
-                width = height;
+        if (row % 2 == 0){
+            for (int col = 0; col < width; col++) {
+                if (col % 2 == 0){
+                    std::cout << "*";
+                }
+                else{
+                    std::cout << " ";
+                }
             }
-            else if (row % 2 == 0){
-                std::cout << "* ";
-            }
-            else{
-                std::cout << " *";
-            }
+            std::cout << std::endl;
         }
-        std::cout << std::endl;
+        
+        else{
+        
+            for (int col = 0; col < width; col++) {
+                if (col % 2 == 0){
+                    std::cout << " ";
+                }
+                else{
+                    std::cout << "*";
+                }
+            }
+            std::cout << std::endl;
+        }
     }
     return(width,height);
 }
