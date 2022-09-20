@@ -13,12 +13,10 @@ int upper(int length){
     std::cout << "Shape: " << std::endl;
 
     for (int row = 0; row < length; row++){
-        for (int col = 0; col < length-num; col++){
-            if (col < row){
-                for (int i=0; i < row; i++){
+        for (int i=0; i < num; i++){
                     std::cout << " ";
                 }
-            }
+        for (int col = 0; col < length-num; col++){
             std::cout << "*";
         }
         num++;
