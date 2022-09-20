@@ -35,7 +35,3 @@ int checkerboard(int width, int height){
     }
     return(width,height);
 }
-
-int main(){
-    checkerboard(11,6);
-}
