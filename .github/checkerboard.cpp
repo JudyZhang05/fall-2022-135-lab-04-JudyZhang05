@@ -9,7 +9,10 @@ Assignment: Lab 4 Task B
 int checkerboard(int width, int height){
     for (int row = 0; row < height; row++) {
         for (int col = 0; col < width; col++) {
-            if (row % 2 == 0){
+            if (width > height){
+                width = height;
+            }
+            else if (row % 2 == 0){
                 std::cout << "* ";
             }
             else{
