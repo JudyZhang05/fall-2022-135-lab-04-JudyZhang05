@@ -26,6 +26,3 @@ int upper(int length){
     std::cout << std::endl;
     return(length);
 }
-int main(){
-    upper(5);
-}

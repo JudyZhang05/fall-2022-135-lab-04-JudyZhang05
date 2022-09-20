@@ -3,6 +3,7 @@
 #include "checkerboard.cpp"
 #include "cross.cpp"
 #include "lower.cpp"
+#include "upper.cpp"
 
 int main(){
 
@@ -10,6 +11,7 @@ int main(){
     checkerboard(11,6);
     cross(8);
     lower(6);
+    upper(5);
 
     return 0;
 }
