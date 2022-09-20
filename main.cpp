@@ -4,6 +4,7 @@
 #include "cross.cpp"
 #include "lower.cpp"
 #include "upper.cpp"
+#include "trapezoid.cpp"
 
 int main(){
 
@@ -12,6 +13,7 @@ int main(){
     cross(8);
     lower(6);
     upper(5);
+    trapezoid(12,5);
 
     return 0;
 }
