@@ -5,10 +5,13 @@ Instructor: Professor Zamansky
 Assignment: Lab 4 Task D
 */
 #include <iostream>
+#include "shapes.h"
 
 int lower(int length){
+    std::cout << "Task D. Lower triangle\n" << std::endl;
+
     int num = length-1;
-    std::cout << "Input side length: " << length << std::endl;   
+    std::cout << "Input side length: " << length << "\n" << std::endl;   
 
     std::cout << "Shape: " << std::endl;
     for (int row = 0; row < length; row++){

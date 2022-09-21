@@ -5,10 +5,12 @@ Instructor: Professor Zamansky
 Assignment: Lab 4 Task E
 */
 #include <iostream>
+#include "shapes.h"
 
 int upper(int length){
+    std::cout << "Task E. Upper triangle\n" << std::endl;
     int num = 0;
-    std::cout << "Input side length: " << length << std::endl;
+    std::cout << "Input side length: " << length << "\n" << std::endl;
 
     std::cout << "Shape: " << std::endl;
 

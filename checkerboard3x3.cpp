@@ -5,8 +5,10 @@ Instructor: Professor Zamansky
 Assignment: Lab 4 Task G
 */
 #include <iostream>
+#include "shapes.h"
 
 int check(int width, int height){
+    std::cout << "Task G. Checkerboard (3x3)\n" << std::endl;
     int outliar = 3;
     
     std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;

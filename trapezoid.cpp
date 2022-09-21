@@ -5,11 +5,12 @@ Instructor: Professor Zamansky
 Assignment: Lab 4 Task F
 */
 #include <iostream>
+#include "shapes.h"
 
 int trapezoid(int width, int height){
+    std::cout << "Task F. Upside-down trapezoid\n" << std::endl;
     
-    std::cout << "Input width: " << width << std::endl;
-    std::cout << "Input height: " << height << std::endl;
+    std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;
 
     if (width - height <= 5){
         std::cout << "Impossible shape!" << std::endl;

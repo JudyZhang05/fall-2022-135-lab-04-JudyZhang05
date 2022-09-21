@@ -1,11 +1,12 @@
 #include <iostream>
-#include "box.cpp"
-#include "checkerboard.cpp"
-#include "cross.cpp"
-#include "lower.cpp"
-#include "upper.cpp"
-#include "trapezoid.cpp"
-#include "checkerboard3x3.cpp"
+// #include "box.cpp"
+// #include "checkerboard.cpp"
+// #include "cross.cpp"
+// #include "lower.cpp"
+// #include "upper.cpp"
+// #include "trapezoid.cpp"
+// #include "checkerboard3x3.cpp"
+#include "shapes.h"
 
 int main(){
 

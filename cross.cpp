@@ -5,10 +5,14 @@ Instructor: Professor Zamansky
 Assignment: Lab 4 Task C
 */
 #include <iostream>
+#include "shapes.h"
 
 int cross(int size){
-    std::cout << "Input size: " << size << std::endl;
-    std::cout << "Shape: " << std::endl;
+    std::cout << "Task C. Cross\n" << std::endl;
+
+    std::cout << "Input size: " << size << "\n" << std::endl;
+    std::cout << "Shape:" << std::endl;
+
     int loop=1;
     for (int row = 0; row < size; row++){
         for (int col = 0; col < size; col++){
