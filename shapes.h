@@ -1,7 +1,7 @@
-int box(int,int);
-int checkerboard(int,int);
-int cross(int);
-int lower(int);
-int upper(int);
-int trapezoid(int,int);
-int check(int,int);
+int box(int width,int height);
+int checkerboard(int width,int height);
+int cross(int size);
+int lower(int length);
+int upper(int length);
+int trapezoid(int width,int height);
+int check(int width,int height);
