@@ -5,6 +5,7 @@
 #include "lower.cpp"
 #include "upper.cpp"
 #include "trapezoid.cpp"
+#include "checkerboard3x3.cpp"
 
 int main(){
 
@@ -14,6 +15,7 @@ int main(){
     lower(6);
     upper(5);
     trapezoid(12,5);
+    check(16,11);
 
     return 0;
 }
