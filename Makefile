@@ -4,7 +4,5 @@ main: main.o box.o checkerboard.o cross.o lower.o upper.o trapezoid.o checkerboa
 main.o: main.cpp shapes.h
 	g++ -c main.cpp
 
-test:
-
 clean:
 	rm -f *o

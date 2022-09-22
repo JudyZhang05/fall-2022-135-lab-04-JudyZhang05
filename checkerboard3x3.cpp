@@ -10,6 +10,13 @@ Assignment: Lab 4 Task G
 int check(int width, int height){
     std::cout << "Task G. Checkerboard (3x3)\n" << std::endl;
     int outliar = 3;
+    int num;
+    if (width % 2 == 0){
+        num = 1;
+    }
+    else{
+        num = 2;
+    }
     
     std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;
 
@@ -67,7 +74,7 @@ int check(int width, int height){
                             }
                             else{
                                 if (col == (width/3)){
-                                    for (int star = 0; star < 1 ; star++){
+                                    for (int star = 0; star < num; star++){
                                         std::cout << "*";
                                     }
                                 }

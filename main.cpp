@@ -9,25 +9,45 @@
 #include "shapes.h"
 
 int main(){
-    std::cout << "\nLab 4. Printing Shapes\n";
+    std::cout << "\nLab 4. Printing Shapes\n\nExample 1:\n";
 
     box(7,4);
     
-    std::cout << "\n------------------\n";
+    std::cout << "\n------------------\n\nExample 2:\n";
+    
+    box(4,7);
+    
+    std::cout << "\n------------------\n\nExample 1:\n";
     
     checkerboard(11,6);
+        
+    std::cout << "\n------------------\n\nExample 2:\n";
+    
+    checkerboard(6,11);
 
-    std::cout << "\n------------------\n";
+    std::cout << "\n------------------\n\nExample 1:\n";
 
     cross(8);
+        
+    std::cout << "\n------------------\n\nExample 2:\n";
 
-    std::cout << "\n------------------\n";
+    cross(6);
+
+    std::cout << "\n------------------\n\nExample 1:\n";
 
     lower(6);
+        
+    std::cout << "\n------------------\n\nExample 2:\n";
 
-    std::cout << "\n------------------\n";
+    lower(5);
+
+    std::cout << "\n------------------\n\nExample 1:\n";
 
     upper(5);
+
+    std::cout << "\n------------------\n\nExample 2:\n";
+
+    upper(7);
 
     std::cout << "\n------------------\n\nExample 1:\n";
 
