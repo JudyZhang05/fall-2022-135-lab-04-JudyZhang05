@@ -7,8 +7,10 @@ Assignment: Lab 4 Task G
 #include <iostream>
 #include "shapes.h"
 
-int check(int width, int height){
-    std::cout << "Task G. Checkerboard (3x3)\n" << std::endl;
+std::string check(int width, int height){
+    std::string result;
+
+    result += "Task G. Checkerboard (3x3)\n\n";
     int outliar = 3;
     int num;
     if (width % 2 == 0){
@@ -18,9 +20,10 @@ int check(int width, int height){
         num = 2;
     }
     
-    std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;
+    result += "Input width: " + std::to_string(width);
+    result += "\nInput height: " + std::to_string(height);
 
-    std::cout << "Shape:" << std::endl;
+    result += "\n\nShape:\n";
     
     for (int board=0; board < height; board+=3){
         if (board % 2 == 0){
@@ -30,16 +33,16 @@ int check(int width, int height){
                         for (int col = 0; col < (width - 1)/3; col++){
                             if (col % 2 == 0){
                                 for (int star = 0; star < 3; star++){
-                                    std::cout << "*";
+                                    result += "*";
                                 }
                             }
                             else{
                                 for (int space = 0; space < 3; space++){
-                                    std::cout << " ";
+                                    result += " ";
                                 }
                             }
                         }
-                        std::cout << std::endl;
+                        result += "\n";
                     }
                 }
                 else{
@@ -47,19 +50,19 @@ int check(int width, int height){
                         for (int col = 0; col < (width)/3; col++){
                             if (col % 2 == 0){
                                 for (int star = 0; star < 3; star++){
-                                    std::cout << "*";
+                                    result += "*";
                                 }
                             }
                             else{
                                 for (int space = 0; space < 3; space++){
-                                    std::cout << " ";
+                                    result += " ";
                                 }
                             }
                         }
-                        std::cout << std::endl;
+                        result += "\n";
                     }
                 }
-                std::cout << std::endl;
+                result += "\n";
             }
         }
         else{
@@ -69,23 +72,23 @@ int check(int width, int height){
                         for (int col = 0; col < (width/3)+1 ; col++){
                             if (col % 2 == 0){
                                 for (int space = 0; space < 3; space++){
-                                    std::cout << " ";
+                                    result += " ";
                                 }
                             }
                             else{
                                 if (col == (width/3)){
                                     for (int star = 0; star < num; star++){
-                                        std::cout << "*";
+                                        result += "*";
                                     }
                                 }
                                 else{
                                     for (int star = 0; star < outliar ; star++){
-                                        std::cout << "*";
+                                        result += "*";
                                     }
                                 }
                             }
                         }
-                        std::cout << std::endl;
+                        result += "\n";
                     }
                 }
                 else{
@@ -93,24 +96,24 @@ int check(int width, int height){
                         for (int col = 0; col < (width)/3; col++){
                             if (col % 2 == 0){
                                 for (int space = 0; space < 3; space++){
-                                    std::cout << " ";
+                                    result += " ";
                                 }
                             }
                             else{
                                 for (int star = 0; star < 3; star++){
-                                    std::cout << "*";
+                                    result += "*";
                                 }
                             }
                         }
-                        std::cout << std::endl;
+                        result += "\n";
                     }
                 }
-                std::cout << std::endl;
+                result += "\n";
             }
         }
     }
     
     
-    std::cout << std::endl;
-    return(width,height);
+    result += "\n";
+    return(result);
 }

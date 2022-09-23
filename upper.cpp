@@ -7,24 +7,25 @@ Assignment: Lab 4 Task E
 #include <iostream>
 #include "shapes.h"
 
-int upper(int length){
-    std::cout << "Task E. Upper triangle\n" << std::endl;
+std::string upper(int length){
+    std::string result;
+    result += "Task E. Upper triangle\n\n";
     int num = 0;
-    std::cout << "Input side length: " << length << "\n" << std::endl;
+    result += "Input side length: " + std::to_string(length);
 
-    std::cout << "Shape: " << std::endl;
+    result += "\n\nShape:\n";
 
     for (int row = 0; row < length; row++){
         for (int i=0; i < num; i++){
-                    std::cout << " ";
+                    result += " ";
                 }
         for (int col = 0; col < length-num; col++){
-            std::cout << "*";
+            result += "*";
         }
         num++;
-        std::cout << std::endl;
+        result += "\n";
     }
 
-    std::cout << std::endl;
-    return(length);
+    result += "\n";
+    return(result);
 }

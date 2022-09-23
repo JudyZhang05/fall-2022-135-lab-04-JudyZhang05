@@ -7,40 +7,42 @@ Assignment: Lab 4 Task B
 #include <iostream>
 #include "shapes.h"
 
-int checkerboard(int width, int height){
-    std::cout << "Task B. Checkerboard\n" << std::endl;
+std::string checkerboard(int width, int height){
+    std::string result;
+    result += "Task B. Checkerboard\n\n";
 
-    std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;
+    result += "Input width: " + std::to_string(width);
+    result += "\nInput height: " + std::to_string(height);
     
-    std::cout << "Shape:" << std::endl;
+    result += "\n\nShape:\n";
 
     for (int row = 0; row < height; row++) {
         if (row % 2 == 0){
             for (int col = 0; col < width; col++) {
                 if (col % 2 == 0){
-                    std::cout << "*";
+                    result += "*";
                 }
                 else{
-                    std::cout << " ";
+                    result += " ";
                 }
             }
-            std::cout << std::endl;
+            result += "\n";
         }
         
         else{
         
             for (int col = 0; col < width; col++) {
                 if (col % 2 == 0){
-                    std::cout << " ";
+                    result += " ";
                 }
                 else{
-                    std::cout << "*";
+                    result += "*";
                 }
             }
-            std::cout << std::endl;
+            result += "\n";
         }
     }
 
-    std::cout << std::endl;
-    return(width,height);
+    result += "\n";
+    return(result);
 }

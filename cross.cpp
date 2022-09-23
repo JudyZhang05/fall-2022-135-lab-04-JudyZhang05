@@ -7,28 +7,29 @@ Assignment: Lab 4 Task C
 #include <iostream>
 #include "shapes.h"
 
-int cross(int size){
-    std::cout << "Task C. Cross\n" << std::endl;
+std::string cross(int size){
+    std::string result;
+    result += "Task C. Cross\n\n";
 
-    std::cout << "Input size: " << size << "\n" << std::endl;
-    std::cout << "Shape:" << std::endl;
+    result += "Input size: " + std::to_string(size);
+    result += "\n\nShape:\n";
 
     int loop=1;
     for (int row = 0; row < size; row++){
         for (int col = 0; col < size; col++){
             if (col == row){
-                std::cout << "*";
+                result += "*";
             }
             else if (col == size-loop){
-                std::cout << "*";
+                result += "*";
                 loop++;
             }
             else{
-                std::cout << " ";
+                result += " ";
             }
         }
-        std::cout << std::endl;
+        result += "\n";
     }
-    std::cout << std::endl;
-    return(size);
+    result += "\n";
+    return(result);
 }

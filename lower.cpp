@@ -7,21 +7,22 @@ Assignment: Lab 4 Task D
 #include <iostream>
 #include "shapes.h"
 
-int lower(int length){
-    std::cout << "Task D. Lower triangle\n" << std::endl;
+std::string lower(int length){
+    std::string result;
+    result +=  "Task D. Lower triangle\n\n";
 
     int num = length-1;
-    std::cout << "Input side length: " << length << "\n" << std::endl;   
+    result +=  "Input side length: " + std::to_string(length);   
 
-    std::cout << "Shape: " << std::endl;
+    result +=  "\n\nShape:\n";
     for (int row = 0; row < length; row++){
         for (int col = 0; col < length-num; col++){
-            std::cout << "*";
+            result +=  "*";
         }
         num--;
-        std::cout << std::endl;
+        result +=  "\n";
     }
 
-    std::cout << std::endl;
-    return(length);
+    result +=  "\n";
+    return(result);
 }

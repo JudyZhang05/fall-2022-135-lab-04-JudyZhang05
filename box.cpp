@@ -7,20 +7,22 @@ Assignment: Lab 4 Task A
 #include <iostream>
 #include "shapes.h"
 
-int box(int width, int height){
-    std::cout << "Task A. Box\n" << std::endl;
+std::string box(int width, int height){
+    std::string result;
+    result += "Task A. Box\n";
 
-    std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;
+    result += "Input width: " + std::to_string(width);
+    result += "\nInput height: " + std::to_string(height);
     
-    std::cout << "Shape:" << std::endl;
+    result += "\n\nShape:\n";
 
     for(int i=0; i<=height; i++){
         for(int n=0; n<width; n++){
-            std::cout << "*";
+            result += "*";
         }
-        std::cout << "\n";
+        result += "\n";
     }
     
-    std::cout << std::endl;
-    return (width,height);
+    result += "\n";
+    return (result);
 }

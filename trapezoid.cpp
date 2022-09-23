@@ -7,34 +7,37 @@ Assignment: Lab 4 Task F
 #include <iostream>
 #include "shapes.h"
 
-int trapezoid(int width, int height){
-    std::cout << "Task F. Upside-down trapezoid\n" << std::endl;
+std::string trapezoid(int width, int height){
+    std::string result;
+    result +=  "Task F. Upside-down trapezoid\n\n";
     
-    std::cout << "Input width: " << width << "\nInput height: " << height << "\n" << std::endl;
+    result +=  "Input width: " + std::to_string(width);
+    result += "\nInput height: " + std::to_string(height);
+    result += "\n\n";
 
     if (width - height <= 5){
-        std::cout << "Impossible shape!" << std::endl;
+        result +=  "Impossible shape!\n";
     } 
     else{
 
-        std::cout << "Shape:" << std::endl;
+        result +=  "\n\nShape:\n";
 
         int stars = width;
         int spaces = 0;
 
         for (int row = 0; row < height; row++){
             for (int i = 0; i < spaces; i++){
-                        std::cout << " ";
+                        result +=  " ";
                     }
             for (int col = 0; col < stars; col++){
-                std::cout << "*";
+                result +=  "*";
             }
             stars -= 2;
             spaces += 1;
-            std::cout << std::endl;
+            result +=  "\n";
         }
     }
 
-    std::cout << std::endl;
-    return(width,height);
+    result +=  "\n";
+    return(result);
 }
